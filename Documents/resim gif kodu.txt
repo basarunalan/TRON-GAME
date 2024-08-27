@@ -1,0 +1,9 @@
+from PIL import Image
+background_image = "background.jpg"  # Arka plan resminizin dosya adı
+
+# Resmi açın ve boyutunu ayarlayın
+image = Image.open(background_image)
+image = image.resize((600, 600))  # Boyutları uygun bir şekilde ayarlayın
+
+# Resmi Turtle'ın kullanabileceği bir formata dönüştürün
+image.save("background.gif")
